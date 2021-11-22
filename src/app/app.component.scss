@@ -1,0 +1,27 @@
+$assetFolder: "/assets/landing/movie-theater-";
+
+.landing-image {
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  animation: fadeInImage 5s;
+
+  @media (min-width: 0px) and (max-width: 640px) {
+    background-image: url($assetFolder + "640.jpg");
+  }
+  @media (min-width: 641px) and (max-width: 1280px) {
+    background-image: url($assetFolder + "1280.jpg");
+  }
+  @media (min-width: 1281px) and (max-width: 1920px) {
+    background-image: url($assetFolder + "1920.jpg");
+  }
+}
+
+@keyframes fadeInImage {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}

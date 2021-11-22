@@ -1,0 +1,21 @@
+.movieContainer {
+  display: flex;
+  width: 50%;
+  margin-left: 20px;
+  flex-direction: column;
+}
+
+.title {
+  font-size: xx-large;
+  font-family: sans-serif;
+  text-shadow: 0 0 1px #000000;
+  color: whitesmoke;
+  align-self: flex-start;
+}
+
+.desc {
+  font-family: sans-serif;
+  text-shadow: 0 0 1px #000000;
+  color: whitesmoke;
+  align-self: flex-start;
+}

@@ -1,0 +1,14 @@
+<div id="chevron" class="carousel">
+  <button id="leftBttn" (click)="moveCarouselLeft()"></button>
+  <div class="wrapper">
+    <ul id="ulwrapper" [@leftRight]="state">
+      <li
+        *ngFor="let movie of movieList; let i = index"
+        (click)="movieSelected(i)"
+      >
+        <img src="{{ movie.poster_path }}" />
+      </li>
+    </ul>
+  </div>
+  <button id="rightBttn" (click)="moveCarouselRight()"></button>
+</div>

@@ -1,0 +1,93 @@
+ul {
+  align-self: flex-end;
+  display: flex;
+  animation: move-left 4s;
+  animation-fill-mode: forwards;
+  padding: 0px;
+}
+li {
+  display: block;
+  width: 200px;
+  height: 150px;
+  min-width: 100px;
+  margin-left: 10px;
+  background-color: darkcyan;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 3px;
+  animation: zoom-out 1s;
+  animation-fill-mode: forwards;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+button {
+  max-width: 20px;
+  max-height: 20px;
+}
+.carousel {
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+@keyframes move-left {
+  0% {
+  }
+  100% {
+    transform: translateX(-100px);
+  }
+}
+
+@keyframes move-right {
+  0% {
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+#leftBttn {
+  width: 100px;
+  height: 100px;
+  background-image: url(https://img.icons8.com/ios-glyphs/30/000000/chevron-left.png);
+  background-size: cover;
+}
+
+#rightBttn {
+  width: 100px;
+  height: 100px;
+  background-image: url(https://img.icons8.com/material-rounded/24/000000/chevron-right.png);
+  background-size: cover;
+}
+
+// Hover syling
+li:hover {
+  animation: zoom-in 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.25);
+  }
+}
+
+@keyframes zoom-out {
+  0% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

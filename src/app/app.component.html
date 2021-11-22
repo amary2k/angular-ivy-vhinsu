@@ -1,0 +1,10 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="landing-image" [style.background-image]="myStyles">
+  <app-logo class="logo"></app-logo>
+  <app-movie-details [movieDetail]="movieDetail"></app-movie-details>
+  <!-- <router-outlet></router-outlet> -->
+  <app-carousel
+    [movieList]="movieList"
+    (movieSelectEvent)="movieSelectEvent($event)"
+  ></app-carousel>
+</div>
